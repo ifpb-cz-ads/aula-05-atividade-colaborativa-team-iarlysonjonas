@@ -14,7 +14,7 @@
             out.print( "<p name= quantidade value= "+quantidade+" >Quantidade de campos: "+ quantidade +"</p>");
             out.print( "<input type=\"hidden\" name=\"quantidade\" value=\"" + quantidade + "\">");
             for(int i = 1; i <=quantidade; ++i){
-                out.print("Campo " + i  + "<input type=\"number\" name=\""+ i +" \"><br>");
+                out.print("Campo " + i  + "<input type=\"number\" name=\"campo\"><br>");
             }
         %>
         <input id="somar" type="submit" value="Somar"/>
