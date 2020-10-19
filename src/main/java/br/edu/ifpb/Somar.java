@@ -18,10 +18,18 @@ public class Somar extends HttpServlet {
         PrintWriter out = response.getWriter();
         int soma = 0;
         int quantidade = Integer.parseInt(request.getParameter("quantidade"));
+       out.println(quantidade);
         for (int i = 1; i <= quantidade; ++i) {
-            int campo = Integer.parseInt(request.getParameter("campo"+i));
-            soma = soma + campo;
+            out.println(i);
+            out.println("entrou1");
+            String campoteste = "campo" + i;
+            out.println(campoteste);;
+            int campo = Integer.parseInt(request.getParameter(campoteste));
+            out.println(campo);
+            out.println("entrou2");
+            //soma = soma + campo;
         }
-        out.println(soma);
+        out.println("entrou3");
+       // out.println(soma);
     }
 }

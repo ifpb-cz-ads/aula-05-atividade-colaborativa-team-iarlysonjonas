@@ -12,6 +12,7 @@
         <%
             int quantidade = Integer.parseInt(request.getParameter("quantidade"));
             out.print( "<p name= quantidade value= "+quantidade+" >Quantidade de campos: "+ quantidade +"</p>");
+            out.print( "<input type=\"hidden\" name=\"quantidade\" value=\"" + quantidade + "\">");
             for(int i = 1; i <=quantidade; ++i){
                 out.print("Campo " + i  + "<input type=\"number\" name=\"campo"+ i +" \"><br>");
             }
