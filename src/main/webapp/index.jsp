@@ -7,7 +7,6 @@
 <div class="main">
     <a href="ShowRequestHeaders">Servlet com cabecalho de Requisicao</a>
     <h1>Formulario de soma</h1>
-    <%--            --%>
     <form method="POST" action="form.jsp">
 
         <p>Deseja quantos Campos?</p>
