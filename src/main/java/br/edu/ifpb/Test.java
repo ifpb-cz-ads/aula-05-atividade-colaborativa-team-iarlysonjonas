@@ -24,10 +24,14 @@ public class Test extends HttpServlet {
         out.println(verificar);
 
 
-                if (semEspacos.substring(0, semEspacos.length()).matches("[a-z]*")) {
+                if (semEspacos.substring(0, semEspacos.length()).matches("[A-Z][a-z]")) {
                     out.println("È um campo textual");
                 }
     
+                if (semEspacos.substring(0, semEspacos.length()).matches("[A-Z]*") || semEspacos.substring(0, semEspacos.length()).matches("[a-z]*")) {
+                    out.println("È um campo textual");
+                }
+
                 if(semEspacos.substring(3).matches("[0-9]*")){
                     out.println("È um campo numerico");
                 }
