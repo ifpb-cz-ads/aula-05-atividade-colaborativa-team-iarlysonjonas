@@ -72,6 +72,27 @@ label{
     font-size: 1.0em;
     background: #fff;
 }
+#enviar-get{
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.0em;
+    background: #fff;
+}
+#enviar-post{
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.0em;
+    background: #fff;
+}
+#gp{
+    position: relative;
+    left: 1%;
+}
+
 #somar{
     position: relative;
     left: 35%;
