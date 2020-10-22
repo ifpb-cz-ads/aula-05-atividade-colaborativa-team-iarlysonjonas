@@ -1,4 +1,4 @@
-package hall;
+package br.edu.ifpb;
 
 import java.io.*;
 import javax.servlet.*;
@@ -6,23 +6,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.util.*;
 
-/** Shows all the request headers sent on this
- *  particular request.
- *  <P>
- *  Part of tutorial on servlets and JSP that appears at
- *  http://www.apl.jhu.edu/~hall/java/Servlet-Tutorial/
- *  1999 Marty Hall; may be freely used or adapted.
- */@WebServlet(
-urlPatterns = {"/ShowRequestHeaders"})
-public class ShowRequestHeaders extends HttpServlet {
+@WebServlet(
+urlPatterns = {"/Headers"})
+public class Headers extends HttpServlet {
   public void doGet(HttpServletRequest request,
                     HttpServletResponse response)
       throws ServletException, IOException {
     response.setContentType("text/html");
     PrintWriter out = response.getWriter();
-    String title = "Servlet Example: Showing Request Headers";
-    out.println("<BODY BGCOLOR=\"#FDF5E6\">\n" +
-                "<H1 ALIGN=CENTER>" + title + "</H1>\n" +
+    String title = "Cabeçalho da requisição HTTP";
+    out.println("<H1 ALIGN=CENTER>" + title + "</H1>\n" +
                 "<B>Request Method: </B>" +
                 request.getMethod() + "<BR>\n" +
                 "<B>Request URI: </B>" +
@@ -41,9 +34,5 @@ public class ShowRequestHeaders extends HttpServlet {
     out.println("</TABLE>\n</BODY></HTML>");
   }
 
-  public void doPost(HttpServletRequest request,
-                     HttpServletResponse response)
-      throws ServletException, IOException {
-    doGet(request, response);
-  }
+
 }

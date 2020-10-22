@@ -6,7 +6,7 @@
 
 <%
 
-String resultado = request.getParameter("testcampo");
+String resultado = (String)request.getParameter("testcampo");
     out.print( resultado );
 
 %>
