@@ -6,8 +6,8 @@
 
 <%
 
-String resultado = (String)request.getParameter("testcampo");
-    out.print( resultado );
+String resultado =request.getParameter("resultadofinal");
+    out.print( "<p>"+ resultado  +"</p><br>" );
 
 %>
 

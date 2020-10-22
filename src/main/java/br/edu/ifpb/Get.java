@@ -12,7 +12,7 @@ import java.io.PrintWriter;
         urlPatterns = {"/get"})
 public class Get extends HttpServlet {
     @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         PrintWriter out = response.getWriter();
         int campo1 = Integer.parseInt(request.getParameter("campo1"));

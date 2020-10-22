@@ -5,11 +5,10 @@
 </head>
 <body>
 <div class="main">
-    <a href="Headers">Servlet com cabecalho de Requisicao</a>
-    <h1>Formulario de soma</h1>
+    <a href="Headers">Servlet com cabecalho de Requisicao</a><br>
 
     <form method="POST" action="form.jsp">
-
+        <p>Formulario de Soma</p>
         <p>Deseja quantos Campos?</p>
         <input type="number" name="quantidade" />
         <input id="enviar-soma" type="submit" value="Enviar" />
@@ -17,14 +16,15 @@
 
     <form method="POST" action="Test">
 
-        <p>campo numerico ou textual?</p>
+        <p>Campo numerico ou textual?</p>
         <input type="text" name="tipo" />
         <input id="enviar-campo" type="submit" value="Enviar" />
     </form>
 
-    <p id="gp">Get ou Post?</p>
+   
 
     <form method="get" action="get.jsp">
+        <p>Get ou Post?</p>
         <input id="enviar-get" type="submit" value="GET">
     </form>
 

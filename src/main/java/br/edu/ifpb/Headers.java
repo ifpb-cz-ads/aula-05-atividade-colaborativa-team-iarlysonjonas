@@ -15,7 +15,8 @@ public class Headers extends HttpServlet {
     response.setContentType("text/html");
     PrintWriter out = response.getWriter();
     String title = "Cabeçalho da requisição HTTP";
-    out.println("<H1 ALIGN=CENTER>" + title + "</H1>\n" +
+        out.println("<BODY BGCOLOR=\"#FDF5E6\">\n" +
+                "<H1 ALIGN=CENTER>" + title + "</H1>\n" +
                 "<B>Request Method: </B>" +
                 request.getMethod() + "<BR>\n" +
                 "<B>Request URI: </B>" +
@@ -33,6 +34,4 @@ public class Headers extends HttpServlet {
     }
     out.println("</TABLE>\n</BODY></HTML>");
   }
-
-
 }

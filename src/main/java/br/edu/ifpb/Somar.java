@@ -19,7 +19,7 @@ public class Somar extends HttpServlet {
         int soma = 0;
         int quantidade = Integer.parseInt(request.getParameter("quantidade"));
         String[] campos = request.getParameterValues("campo");
-        for (int i = 0; i <= quantidade; ++i) {
+        for (int i = 0; i <= quantidade; i++) {
             soma = soma + Integer.parseInt(campos[i]);
             int numero = i +1;
             out.println("valor " + numero + " é " + campos[i]);

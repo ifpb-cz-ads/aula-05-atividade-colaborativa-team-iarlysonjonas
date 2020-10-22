@@ -7,7 +7,7 @@
 <div class="main">
     <h1>Get foi selecionado</h1>
 
-    <form method="post" action="get">
+    <form method="GET" action="get">
 
         <input type="number" name="campo1">
         <input type="number" name="campo2">
